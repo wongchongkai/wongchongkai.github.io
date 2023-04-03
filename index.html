@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles.css">
+
+
+
+    <link rel="preload" href="/resume-site.wasm" as="fetch" type="application/wasm" crossorigin="">
+    <link rel="modulepreload" href="/resume-site.js">
+</head>
+
+<body>
+
+
+    <script type="module">import init from '/resume-site.js'; init('/resume-site.wasm');</script>
+</body>
+
+</html>
