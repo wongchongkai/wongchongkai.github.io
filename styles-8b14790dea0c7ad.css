@@ -11,39 +11,12 @@ html {
     src: url("fonts/OpenSans-Regular.ttf");
 }
 
-@media (prefers-color-scheme: light) {
-    body {
-        color: #111;
-        background-color: #ddd;
-    }
-
-    a {
-        color: #111;
-    }
-
-    main>section {
-        border: 2px solid #111;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        color: #ddd;
-        background-color: #111111;
-    }
-
-    a {
-        color: #ddd;
-    }
-
-    main>section {
-        border: 2px solid #ddd;
-    }
-}
-
 body {
+    color: #ddd;
+    background-color: #111;
     max-width: 1000px;
     margin: auto;
+    vertical-align: middle;
 }
 
 header {
@@ -60,12 +33,14 @@ main {
 }
 
 main>section {
-    padding: 10px 20px;
+    border: 2px solid #ddd;
+    padding: 10px 30px;
     margin: 10px;
     border-radius: 20px;
 }
 
 a {
+    color: #ddd;
     text-decoration: none;
 }
 
@@ -74,17 +49,15 @@ a:hover {
 }
 
 .contact-info {
-    color: #ddd;
     text-decoration: none;
     display: block;
-    margin: 3px auto;
-    width: fit-content;
+    margin: 5px auto;
 }
 
 .icon {
-    height: 14px;
-    margin-left: 3px;
-    margin-right: 3px;
+    height: 0.9em;
+    width: 0.9em;
+    margin: 0 0.4em
 }
 
 h2 {
@@ -117,4 +90,15 @@ li {
 p {
     margin-top: 3px;
     margin-bottom: 3px;
+}
+
+footer {
+    color: #888;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 30px auto 20px auto;
+}
+
+footer>a {
+    color: #888;
 }
